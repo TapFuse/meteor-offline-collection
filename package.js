@@ -1,6 +1,6 @@
 Package.describe({
   name: 'tapfuse:offline-collection',
-  version: '1.0.0',
+  version: '1.1.0',
   // Brief, one-line summary of the package.
   summary: 'Not yet released',
   // URL to the Git repository containing the source code for this package.
@@ -25,6 +25,7 @@ Package.onUse(function(api) {
       'ecmascript',
       'mongo',
       'promise',
+      'reactive-var'
 
     ]);
     // 3rd party
