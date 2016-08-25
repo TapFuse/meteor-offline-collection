@@ -1,6 +1,6 @@
 Package.describe({
   name: 'tapfuse:offline-collection',
-  version: '2.0.0',
+  version: '3.0.0',
   // Brief, one-line summary of the package.
   summary: 'Not yet released',
   // URL to the Git repository containing the source code for this package.
@@ -15,7 +15,8 @@ var S = 'server';
 var CS = [C, S];
 
 Npm.depends({
-  lodash: '4.6.1',
+  'lodash': '4.6.1',
+  'whatwg-fetch': '1.0.0',
 });
 
 Package.onUse(function(api) {
@@ -25,13 +26,13 @@ Package.onUse(function(api) {
       'ecmascript',
       'mongo',
       'promise',
-      'reactive-var'
+      'reactive-var',
+      'reactive-dict',
 
     ]);
     // 3rd party
     api.use([
       'tapfuse:collection-global@2.0.0',
-
     ]);
     api.mainModule('lib/tp-offline-collection.js', C);
     api.mainModule('lib/kernel.js', C);
