@@ -3,17 +3,17 @@
     "lodash.difference": {
       "version": "4.5.0",
       "resolved": "https://registry.npmjs.org/lodash.difference/-/lodash.difference-4.5.0.tgz",
-      "from": "lodash.difference@4.5.0"
+      "from": "https://registry.npmjs.org/lodash.difference/-/lodash.difference-4.5.0.tgz"
     },
     "lodash.includes": {
       "version": "4.3.0",
       "resolved": "https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz",
-      "from": "lodash.includes@4.3.0"
+      "from": "https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz"
     },
     "whatwg-fetch": {
       "version": "1.0.0",
       "resolved": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-1.0.0.tgz",
-      "from": "whatwg-fetch@1.0.0"
+      "from": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-1.0.0.tgz"
     }
   }
 }
