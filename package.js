@@ -1,6 +1,6 @@
 Package.describe({
   name: 'tapfuse:offline-collection',
-  version: '3.1.0',
+  version: '6.0.0',
   // Brief, one-line summary of the package.
   summary: 'Not yet released',
   // URL to the Git repository containing the source code for this package.
@@ -15,7 +15,9 @@ var S = 'server';
 var CS = [C, S];
 
 Npm.depends({
-  lodash: '4.6.1',
+  'lodash.difference': '4.5.0',
+  'lodash.includes': '4.3.0',
+  'whatwg-fetch': '1.0.0',
 });
 
 Package.onUse(function(api) {
@@ -25,13 +27,13 @@ Package.onUse(function(api) {
       'ecmascript',
       'mongo',
       'promise',
-      'reactive-var'
+      'reactive-var',
+      'reactive-dict',
 
     ]);
     // 3rd party
     api.use([
       'tapfuse:collection-global@2.0.0',
-
     ]);
     api.mainModule('lib/bundled-data.js', C);
     api.mainModule('lib/tp-offline-collection.js', C);
@@ -39,7 +41,7 @@ Package.onUse(function(api) {
     api.mainModule('lib/offLine-collection-pending-jobs.js', C);
     api.export('offLineCollection', C);
     api.export('clearAllLocalDB', C);
-    api.export('offlineControl', C);
+    api.export('dataHandler', C);
 });
 
 Package.onTest(function(api) {
