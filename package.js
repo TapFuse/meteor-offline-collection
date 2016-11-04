@@ -1,6 +1,6 @@
 Package.describe({
   name: 'tapfuse:offline-collection',
-  version: '5.2.1',
+  version: '6.0.0',
   // Brief, one-line summary of the package.
   summary: 'Not yet released',
   // URL to the Git repository containing the source code for this package.
@@ -40,6 +40,7 @@ Package.onUse(function(api) {
     api.mainModule('lib/offLine-collection-pending-jobs.js', C);
     api.export('offLineCollection', C);
     api.export('clearAllLocalDB', C);
+    api.export('dataHandler', C);
 });
 
 Package.onTest(function(api) {
