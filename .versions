@@ -22,7 +22,7 @@ html-tools@1.0.10
 htmljs@1.0.10
 id-map@1.0.8
 jquery@1.11.9
-local-test:tapfuse:offline-collection@6.0.0
+local-test:tapfuse:offline-collection@6.0.1
 logging@1.0.14
 meteor@1.1.16
 minimongo@1.0.17
@@ -42,7 +42,7 @@ routepolicy@1.0.11
 spacebars@1.0.12
 spacebars-compiler@1.0.12
 tapfuse:collection-global@2.0.0
-tapfuse:offline-collection@6.0.0
+tapfuse:offline-collection@6.0.1
 tinytest@1.0.11
 tracker@1.0.15
 ui@1.0.11
