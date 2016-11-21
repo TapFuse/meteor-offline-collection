@@ -1,6 +1,6 @@
 Package.describe({
   name: 'tapfuse:offline-collection',
-  version: '6.0.1',
+  version: '7.0.1',
   // Brief, one-line summary of the package.
   summary: 'Not yet released',
   // URL to the Git repository containing the source code for this package.
@@ -15,6 +15,7 @@ var S = 'server';
 var CS = [C, S];
 
 Npm.depends({
+  'localforage': '1.4.3',
   'lodash.difference': '4.5.0',
   'lodash.includes': '4.3.0',
   'whatwg-fetch': '1.0.0',
