@@ -1,3 +1,5 @@
+### Package is no longer maintaned.
+
 ## Install
 ```
 meteor add tapfuse:offline-collection
